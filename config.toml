@@ -24,7 +24,7 @@ pygmentscodefencesguesssyntax = true
     #gravatar = "john.doe@example.com"
 #    footercontent = "Enter a text here."
 
-    dateformat = "2 January, 2006"
+    dateformat = "02.01.2006"
 
     hideFooter = true
     hideCredits = false
