@@ -1,9 +1,9 @@
 +++
-title = "Contact"
+title = "Kontakt"
 slug = "contact"
 +++
 
-**Booking**  
+**Esinemised**  
  Rene Allkivi  
  rene@blues.ee
 
