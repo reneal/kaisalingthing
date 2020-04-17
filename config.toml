@@ -130,12 +130,12 @@ pygmentscodefencesguesssyntax = true
 #            keywords = "blog,desenvolvedor,pessoal"
 #            footercontent = "Coloque algum texto aqui."
 
-#        [languages.pt-br.menu]
+        [languages.et.menu]
 #
-#            [[languages.pt-br.menu.main]]
- #           name = "Sobre"
- #           weight = 1
- #           url = "about/"
+#            [[languages.et.menu.main]]
+#            name = "Sündmused"
+#            weight = 1
+#            url = "events/"
 #
  #           [[languages.et.menu.main]]
   #          name = "Press"

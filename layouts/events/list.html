@@ -1,0 +1,11 @@
+{{ define "title" }}
+  {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  <section class="container list">
+    <h1 class="title">{{ .Title }}</h1>
+            <ul id="events">
+  <!-- Events will be rendered inside this div -->
+</ul>
+  </section>
+{{ end }}
