@@ -137,10 +137,10 @@ pygmentscodefencesguesssyntax = true
  #           weight = 1
  #           url = "about/"
 #
-            [[languages.et.menu.main]]
-            name = "Press"
-            weight = 2
-            url = "posts/"
+ #           [[languages.et.menu.main]]
+  #          name = "Press"
+   #         weight = 2
+    #        url = "posts/"
 
             [[languages.et.menu.main]]
             name = "Muusika"
