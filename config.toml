@@ -4,7 +4,7 @@ title = "Kaisa Ling Thing"
 theme = "hugo-coder"
 
 languagecode = "en"
-defaultcontentlanguage = "en"
+defaultcontentlanguage = "et"
 
 paginate = 20
 canonifyurls = true
@@ -104,7 +104,7 @@ pygmentscodefencesguesssyntax = true
    #         url = "about/"
 #
 #          [[languages.en.menu.main]]
-#            name = "Watch"
+#            name = "Press"
 #            weight = 2
 #            url = "posts/"
 
@@ -137,11 +137,11 @@ pygmentscodefencesguesssyntax = true
  #           weight = 1
  #           url = "about/"
 #
-  #          [[languages.pt-br.menu.main]]
-  #          name = "Blog"
-  #          weight = 2
-  #          url = "posts/"
-#
+            [[languages.et.menu.main]]
+            name = "Press"
+            weight = 2
+            url = "posts/"
+
             [[languages.et.menu.main]]
             name = "Muusika"
             weight = 3
