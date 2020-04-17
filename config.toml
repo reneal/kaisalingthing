@@ -1,4 +1,4 @@
-baseurl = "http://www.example.com"
+baseurl = "https://friendly-lamarr-11f21d.netlify.app"
 title = "Kaisa Ling Thing"
 
 theme = "hugo-coder"
