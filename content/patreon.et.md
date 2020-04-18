@@ -2,13 +2,13 @@
 title = "Patreon"
 slug = "patreon"
 +++
-**See naine / Õige mutt ei hooli (2020)**  
+### See naine / Õige mutt ei hooli (2020)
 Lae alla duubel (.mp3)
 
-**Bluus klimakteeriumile (2019)**  
+### Bluus klimakteeriumile (2019)
 Lae alla singel (.mp3)
 
-**Nii kole mees (2018)**  
+### Nii kole mees (2018)
 Lae alla album (.mp3)
 
 ![Nii kole mees](/images/niikolemees-kaanepilt.jpg)
