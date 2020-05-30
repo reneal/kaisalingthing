@@ -132,10 +132,10 @@ pygmentscodefencesguesssyntax = true
 
         [languages.et.menu]
 #
-#            [[languages.et.menu.main]]
-#            name = "Sündmused"
-#            weight = 1
-#            url = "events/"
+            [[languages.et.menu.main]]
+            name = "Kontserdid"
+            weight = 1
+            url = "events/"
 #
  #           [[languages.et.menu.main]]
   #          name = "Press"
