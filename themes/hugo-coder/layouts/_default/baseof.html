@@ -31,7 +31,7 @@ jQuery(document).ready(function() {
   // HTML element which will include event list
   var container = jQuery('#events'); 
   // Pull upcoming events from Fienta
-  jQuery.getJSON('https://fienta.com/o/heldeke?format=json', function(data) {
+  jQuery.getJSON('https://fienta.com/o/840?format=json', function(data) {
     // Cycle through the results
     data.events.forEach(function (event) {
       // Write events into DOM
