@@ -8,10 +8,8 @@ slug = "projects"
 
 **Ookean**
 {{< youtube 0OIjqieQgjU >}}
-
-https://www.youtube.com/watch?v=YRFm7TocJeo
   
 **See naine**
-{{< youtube 5VAxPSx4gYY >}}
+{{< youtube dR4fgFKpsgE >}}
 
 
