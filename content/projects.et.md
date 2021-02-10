@@ -7,6 +7,4 @@ slug = "projects"
 {{< youtube 0OIjqieQgjU >}}
   
 **See naine**
-{{< youtube 5VAxPSx4gYY >}}
-
-
+{{< youtube dR4fgFKpsgE >}}
