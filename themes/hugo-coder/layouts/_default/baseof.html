@@ -34,7 +34,6 @@ jQuery(document).ready(function() {
   jQuery.getJSON('https://fienta.com/o/840?format=json', function(data) {
     // Cycle through the results
 
-    if(data.events.items && data.events.length) {
       data.events.forEach(function (event) {
         // Write events into DOM
         container.append(
@@ -44,13 +43,7 @@ jQuery(document).ready(function() {
           '</li>'
         );
       });
-    }
-    else {
-      container.append('<li>' +
-        '<span class="date">' + ' ' + '</span>' +
-        '<t> ' + 'Kontserte hetkel ei ole' + '</t>' +
-        '</li>');
-    }
+
   });
 });
 </script>
