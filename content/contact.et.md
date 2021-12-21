@@ -3,10 +3,6 @@ title = "Kontakt"
 slug = "contact"
 +++
 
-**Esinemised**  
- Rene Allkivi  
- rene@blues.ee
-
-**Press**  
+**Press & Esinemised**
   Kaisa Ling  
   kaisamaria.de.la@gmail.com
