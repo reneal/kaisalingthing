@@ -5,4 +5,4 @@ slug = "contact"
 
 **Press & Esinemised**
   Kaisa Ling  
-  kaisamaria.de.la@gmail.com
+  kaisalingthing@gmail.com
