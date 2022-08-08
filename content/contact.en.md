@@ -5,4 +5,4 @@ slug = "contact"
 
 **Press & Booking**  
   Kaisa Ling  
-  kaisamaria.de.la@gmail.com
+  kaisalingthin@gmail.com
