@@ -85,12 +85,13 @@ pygmentscodefencesguesssyntax = true
     icon = "fab fa-apple"
     weight = 4
     url = "https://music.apple.com/us/artist/kaisa-ling-thing/1440197106"
-    
+
 [[params.social]]
-    name = "Patreon"
-    icon = "fab fa-patreon"
-    weight = 4
-    url = "https://www.patreon.com/kaisalingthing"
+    name = "Youtube"
+    icon = "fab fa-youtube"
+    weight = 5
+    url = "https://www.youtube.com/channel/UCAOYQpvfu4BKkZRJeVPIgyQ"
+
 
 [languages]
     [languages.en]
