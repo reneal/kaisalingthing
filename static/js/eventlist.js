@@ -1,6 +1,18 @@
 jQuery(document).ready(function () {
     var container = jQuery('#events');
 
+    // Get the current language
+    var lang = jQuery('html').attr('lang');
+    var noEventsTextEstonian = 'Praegu esinemisi kirjas pole, aga plaanis on kindlasti kontserte anda. Ärge muretsege!';
+    var noEventsTextEnglish = 'Currently, there are no scheduled performances, but we definitely plan to have concerts. Don\'t worry!';
+    
+    function getNoEventsText() {
+        if (lang === 'en') {
+            return noEventsTextEnglish;
+        }
+        return noEventsTextEstonian;
+    }
+
     function formatDateToEstonian(dateStr) {
         var date = new Date(dateStr);
         var months = ['jaanuar', 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember'];
@@ -10,6 +22,24 @@ jQuery(document).ready(function () {
         var currentYear = new Date().getFullYear();
 
         return day + '. ' + month + (currentYear !== year ? ' ' + year : '');
+    }
+
+    function formatDateToEnglish(dateStr) {
+        var date = new Date(dateStr);
+        var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        var day = date.getDate();
+        var month = months[date.getMonth()];
+        var year = date.getFullYear();
+        var currentYear = new Date().getFullYear();
+
+        return month + ' ' + day + (currentYear !== year ? ', ' + year : '');
+    }
+
+    function formatEventDate(dateStr) {
+        if (lang === 'en') {
+            return formatDateToEnglish(dateStr);
+        }
+        return formatDateToEstonian(dateStr);
     }
 
     jQuery.getJSON('https://fienta.com/o/840?format=json', function (data) {
@@ -25,20 +55,14 @@ jQuery(document).ready(function () {
                 container.append(
                     '<div class="event-card">' +
                     imageHtml +
-                    '<div class="event-date"><i class="fa fa-calendar-alt"></i> ' + formatDateToEstonian(event.starts_at) + '</div>' +
+                    '<div class="event-date"><i class="fa fa-calendar-alt"></i> ' + formatEventDate(event.starts_at) + '</div>' +
                     '<div class="event-title"><a href="' + event.buy_tickets_url + '">' + event.title + '</a></div>' +
                     '<div class="event-venue"><i class="fa fa-map-marker-alt"></i> <a href="' + googleMapsLink + '" target="_blank" title="' + event.address + '">' + event.venue + '</a></div>' +
                     '</div>'
                 );
             });
         } else {
-            container.append(
-                '<div class="event-card">' +
-                '<div class="event-date"></div>' +
-                '<div class="event-title">Praegu esinemisi kirjas pole, aga plaanis on kindlasti kontserte anda. Ärge muretsege!</div>' +
-                '<div class="event-venue"></div>' +
-                '</div>'
-            );
+            container.append(getNoEventsText());
         }
     });
 });

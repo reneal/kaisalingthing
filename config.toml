@@ -108,6 +108,10 @@ pygmentscodefencesguesssyntax = true
 #            name = "Press"
 #            weight = 2
 #            url = "posts/"
+            [[languages.en.menu.main]]
+            name = "Concerts"
+            weight = 2
+            url = "events/"
 
             [[languages.en.menu.main]]
             name = "Watch"
