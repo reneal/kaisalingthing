@@ -49,7 +49,7 @@ jQuery(document).ready(function () {
                 
                 var imageHtml = '';
                 if (event.image_url) {
-                    imageHtml = '<img src="' + event.image_url + '" alt="' + event.title + '" class="event-image" />';
+                    imageHtml = '<a href="' + event.buy_tickets_url + '"><img src="' + event.image_url + '" alt="' + event.title + '" class="event-image" /></a>';
                 }
                 
                 container.append(

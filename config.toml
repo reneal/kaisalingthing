@@ -110,7 +110,7 @@ pygmentscodefencesguesssyntax = true
 #            url = "posts/"
             [[languages.en.menu.main]]
             name = "Concerts"
-            weight = 2
+            weight = 1
             url = "events/"
 
             [[languages.en.menu.main]]
