@@ -1,3 +1,5 @@
+
+
 jQuery(document).ready(function () {
     var container = jQuery('#events');
 
@@ -14,7 +16,7 @@ jQuery(document).ready(function () {
     }
 
     function formatDateToEstonian(dateStr) {
-        var date = new Date(dateStr);
+        var date = new Date(dateStr.replace(/-/g, "/"));
         var months = ['jaanuar', 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember'];
         var day = date.getDate();
         var month = months[date.getMonth()];
@@ -25,7 +27,7 @@ jQuery(document).ready(function () {
     }
 
     function formatDateToEnglish(dateStr) {
-        var date = new Date(dateStr);
+        var date = new Date(dateStr.replace(/-/g, "/"));
         var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         var day = date.getDate();
         var month = months[date.getMonth()];
