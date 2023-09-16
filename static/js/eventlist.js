@@ -26,7 +26,7 @@ jQuery(document).ready(function () {
                     '<div class="event-card">' +
                     imageHtml +
                     '<div class="event-date"><i class="fa fa-calendar-alt"></i> ' + formatDateToEstonian(event.starts_at) + '</div>' +
-                    '<div class="event-title"><a href="' + event.url + '">' + event.title + '</a></div>' +
+                    '<div class="event-title"><a href="' + event.buy_tickets_url + '">' + event.title + '</a></div>' +
                     '<div class="event-venue"><i class="fa fa-map-marker-alt"></i> <a href="' + googleMapsLink + '" target="_blank" title="' + event.address + '">' + event.venue + '</a></div>' +
                     '</div>'
                 );
