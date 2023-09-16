@@ -1,11 +1,15 @@
 {{ define "title" }}
   {{ .Title }} · {{ .Site.Title }}
 {{ end }}
+
 {{ define "content" }}
-  <section class="container list">
-    <h1 class="title">{{ .Title }}</h1>
-            <ul id="events">
-  <!-- Events will be rendered inside this div -->
-</ul>
-  </section>
+<!-- Import eventlist.js script from static /js -->
+<script src="{{ "js/eventlist.js" | relURL }}"></script>
+
+<section class="container event-section">
+    <h1 class="event-list-title">{{ .Title }}</h1>
+    <div id="events" class="event-cards">
+        <!-- Events will be rendered inside this div as cards -->
+    </div>
+</section>
 {{ end }}

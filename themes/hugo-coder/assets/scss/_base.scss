@@ -210,3 +210,61 @@ figure {
 .fas {
   font-weight: 900;
 }
+
+.event-card {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color: #f5f5f5;
+
+  &:hover {
+      transform: translateY(-5px);
+  }
+
+  .event-date {
+      font-weight: bold;
+      font-size: 1.6rem; // Adjusted size
+      margin-bottom: 10px;
+  }
+
+  .event-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .event-title {
+      font-size: 1.8rem; // Adjusted size
+      margin-bottom: 10px;
+
+      a {
+          color: #333;
+          text-decoration: none;
+          transition: color 0.2s;
+
+          &:hover {
+              color: #007BFF; // or any other highlight color
+          }
+      }
+  }
+
+  .event-venue {
+      font-size: 1.6rem; // Adjusted size
+
+      a {
+          color: #777;
+          text-decoration: none;
+          transition: color 0.2s;
+
+          &:hover {
+              color: #007BFF; // or any other highlight color
+          }
+      }
+  }
+}
+
+
