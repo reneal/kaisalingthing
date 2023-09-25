@@ -65,7 +65,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 
                 var imageHtml = '';
                 if (event.image_url) {
-                    imageHtml = '<a href="' + event.buy_tickets_url + '"><img src="' + event.image_url + '" alt="' + event.title + '" class="event-image" /></a>';
+                    // Using 1070x602 as the image width and height
+                    var imageWidth = 1070;
+                    var imageHeight = 602;
+                    imageHtml = '<a href="' + event.buy_tickets_url + '"><img src="' + event.image_url + '" alt="' + event.title + '" class="event-image" width="' + imageWidth + '" height="' + imageHeight + '" /></a>';
                 }
                 
                 container.insertAdjacentHTML('beforeend',
