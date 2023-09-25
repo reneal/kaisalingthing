@@ -2,3 +2,4 @@
 demo/
 .hugo/*
 !.hugo/version
+*/.DS_Store
