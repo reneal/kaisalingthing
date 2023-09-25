@@ -1,10 +1,9 @@
 
-
-jQuery(document).ready(function () {
-    var container = jQuery('#events');
+document.addEventListener('DOMContentLoaded', function () {
+    var container = document.getElementById('events');
 
     // Get the current language
-    var lang = jQuery('html').attr('lang');
+    var lang = document.documentElement.getAttribute('lang');
     var noEventsTextEstonian = 'Praegu esinemisi kirjas pole, aga plaanis on kindlasti kontserte anda. Ärge muretsege!';
     var noEventsTextEnglish = 'Currently, there are no scheduled performances, but we definitely plan to have concerts. Don\'t worry!';
     
@@ -44,8 +43,23 @@ jQuery(document).ready(function () {
         return formatDateToEstonian(dateStr);
     }
 
-    jQuery.getJSON('https://fienta.com/o/840?format=json', function (data) {
-        if (data.events.length) {
+    function fetchJSON(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.responseType = 'json';
+        xhr.onload = function() {
+            var status = xhr.status;
+            if (status === 200) {
+                callback(null, xhr.response);
+            } else {
+                callback(status);
+            }
+        };
+        xhr.send();
+    }
+
+    fetchJSON('https://fienta.com/o/840?format=json', function (err, data) {
+        if (!err && data.events.length) {
             data.events.forEach(function (event) {
                 var googleMapsLink = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(event.address);
                 
@@ -54,7 +68,7 @@ jQuery(document).ready(function () {
                     imageHtml = '<a href="' + event.buy_tickets_url + '"><img src="' + event.image_url + '" alt="' + event.title + '" class="event-image" /></a>';
                 }
                 
-                container.append(
+                container.insertAdjacentHTML('beforeend',
                     '<div class="event-card">' +
                     imageHtml +
                     '<div class="event-date"><i class="fa fa-calendar-alt"></i> ' + formatEventDate(event.starts_at) + '</div>' +
@@ -64,7 +78,7 @@ jQuery(document).ready(function () {
                 );
             });
         } else {
-            container.append(getNoEventsText());
+            container.insertAdjacentHTML('beforeend', getNoEventsText());
         }
     });
 });
