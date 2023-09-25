@@ -20,7 +20,7 @@ pygmentscodefencesguesssyntax = true
 #    description = "John Doe's personal website"
 #    keywords = "blog,developer,personal"
     info = "Vaudeville blues, tricks and tomfoolery."
-    avatarurl = "images/C_01.png"
+    avatarurl = "images/C_01.webp"
     #gravatar = "john.doe@example.com"
 #    footercontent = "Enter a text here."
 
